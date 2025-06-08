@@ -1,6 +1,7 @@
 :root {
   --font-primary: Arial, Helvetica, sans-serif;
   --font-primary-color: #212121;
+  --font-navigation-color-hover: #cc0033;
   --margin-small: 0 24px;
   --margin-medium: 0 48px;
 }
@@ -35,7 +36,7 @@ body {
 
 
 .header, .footer {
-  padding: 0 0 24px;
+  padding: 0 0 12px;
 }
 
 .footer {

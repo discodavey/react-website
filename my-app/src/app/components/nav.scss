@@ -12,7 +12,14 @@
     list-style: none;
 
     .navigation-link {
+      color: var(--font-primary-color);
+      font-weight: bold;
       text-decoration: none;
+      text-transform: uppercase;
+
+      &:hover {
+        color: var(--font-navigation-color-hover);
+      }
     }
   }
 }
