@@ -1,10 +1,20 @@
 import Image from "next/image";
-import "./footer.css"
+import "./footer.scss"
 
 export default function Footer() {
   return (
     <footer className="footer">
-      This is the footer
+      <ul className="footer-navigation">
+        <li>
+          <a href="" className="footer-navigation-link">Home</a>
+        </li>
+        <li>
+          <a href="" className="footer-navigation-link">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="" className="footer-navigation-link">Terms</a>
+        </li>
+      </ul>
     </footer>
   );
 }

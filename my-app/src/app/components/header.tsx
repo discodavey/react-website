@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./header.css";
+import "./header.scss";
 import Nav from "./nav";
 
 export default function Home() {
@@ -9,14 +9,18 @@ export default function Home() {
         <Image
           src="/cropped-impulse-events-wp-logo.png"
           alt="Impulse Events"
-          width={180}
-          height={38}
+          width={168}
+          height={24}
           priority
         />
       </div>
       <nav className="navigation">
         <Nav />
       </nav>
+      <div className="mobile-menu">
+        <a href="">
+          <img src="/hamburger.svg" alt="" />Menu</a>
+        </div>
     </header>
   );
 }
