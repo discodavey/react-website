@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 24px;
+  grid-column: 1/13;
+  grid-row: 4;
+
+  @media only screen and (min-width: 768px) {
+    grid-row: 3;
+  }
+}
+
+.footer-navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-right: 24px;
+  }
+
+  li:last-of-type {
+      margin-right: 0;
+  }
+}
+
+.footer-navigation {
+  color: var(--font-primary-color);
+}
+
+.footer-navigation-link {
+  color: var(--font-primary-color);
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+
+}
