@@ -1,10 +1,14 @@
 .main {
+  border-bottom: 1px solid var(--font-primary-color);
   grid-column: 1/13;
   grid-row: 2;
+  margin-bottom: 24px;
   padding-bottom: 24px;
 
   @media only screen and (min-width: 768px) {
+    border-bottom: none;
     grid-column: 1/10;
+    margin-bottom: 0;
   }
 }
 
