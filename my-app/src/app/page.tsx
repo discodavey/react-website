@@ -2,12 +2,12 @@ import React from 'react';
 import "./page.scss";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import homeData from '../json/home.json';
-import sideData from '../json/side.json';
+import homeData from '../data/home.json';
+import sideData from '../data/side.json';
 
 const Home: React.FC = () => {
   const {title: homeTitle, description, content: homeContent, burger: burger} = homeData;
-  const {title: sideTitle, content: sideContent} = sideData;
+  const {content: sideContent} = sideData;
 
   return (
     <div className="wrapper">
