@@ -19,7 +19,7 @@ export default function Home() {
       </nav>
       <div className="mobile-menu">
         <a href="">
-          <img src="/hamburger.svg" alt="" />Menu</a>
+          <img src="../../images/hamburger.svg" alt="" />Menu</a>
         </div>
     </header>
   );
