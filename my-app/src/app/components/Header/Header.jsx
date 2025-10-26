@@ -1,13 +1,13 @@
 import Image from "next/image";
-import "./header.scss";
-import Nav from "./nav";
+import "./Header.scss";
+import Nav from "../Nav/Nav.jsx";
 
 export default function Home() {
   return (
     <header className="header">
       <div className="logo">
         <Image
-          src="/cropped-impulse-events-wp-logo.png"
+          src="/images/cropped-impulse-events-wp-logo.png"
           alt="Impulse Events"
           width={168}
           height={24}

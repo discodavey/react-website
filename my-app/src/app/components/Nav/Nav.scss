@@ -1,9 +1,8 @@
 .navigation {
-  display: none;
   margin: 1px 0 0;
   padding: 0;
 
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 730px) {
     display: flex;
   }
 
@@ -25,5 +24,7 @@
 }
 
 .mobile-menu {
-  display: none;
+  @media only screen and (min-width: 730px) {
+    display: none;
+  }
 }

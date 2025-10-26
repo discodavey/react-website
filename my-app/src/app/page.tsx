@@ -1,12 +1,12 @@
 import React from 'react';
 import "./page.scss";
-import Header from "./components/header";
-import Footer from "./components/footer";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 import homeData from '../json/home.json';
 import sideData from '../json/side.json';
 
 const Home: React.FC = () => {
-  const {title: homeTitle, description, content: homeContent} = homeData;
+  const {title: homeTitle, description, content: homeContent, burger: burger} = homeData;
   const {title: sideTitle, content: sideContent} = sideData;
 
   return (
@@ -15,6 +15,7 @@ const Home: React.FC = () => {
         <Header/>
         <main className="main">
           <h1>{homeTitle}</h1>
+          <img src={burger} alt="" />
           <p>{description}</p>
           {homeContent.map((item, index) => (
             <p key={index}>{item}</p>
@@ -36,7 +37,7 @@ const Home: React.FC = () => {
 }
 
 const About: React.FC = () => {
-  const {title: sideTitle, content: sideContent} = sideData;
+  const {content: sideContent} = sideData;
 
   return (
     <div className="wrapper">
@@ -47,7 +48,6 @@ const About: React.FC = () => {
          <p>This is the about page</p>
         </main>
         <aside className="aside">
-          <h2>{sideTitle}</h2>
           {sideContent.map((item, index) => (
             <div key={index} className="aside-content-item">
               <h3>{item.title}</h3>

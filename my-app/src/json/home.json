@@ -1,5 +1,6 @@
 {
   "title": "Welcome",
+  "burger": "https://picsum.photos/seed/picsum/1000/600",
   "description": "This is a React website with Nextjs in progress. The code for this can be found on GitHub",
   "content": [
     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore fugiat quis tempore dolore assumenda. Eius, asperiores optio. Beatae tempora nobis inventore, voluptates eligendi, dolore facere iusto quaerat vero, laudantium id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste delectus ratione vitae. Sed aut iusto nihil illum ut distinctio vel magnam, exercitationem, fugit possimus corporis, minima in voluptas aspernatur pariatur?",
