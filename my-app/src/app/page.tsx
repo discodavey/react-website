@@ -1,7 +1,7 @@
 import React from 'react';
 import "./page.scss";
-import Header from "./components/Header/Header.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import homeData from '../data/home.json';
 import sideData from '../data/side.json';
 

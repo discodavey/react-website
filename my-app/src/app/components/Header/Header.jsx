@@ -1,8 +1,8 @@
 import Image from "next/image";
 import "./Header.scss";
-import Nav from "../Nav/Nav.jsx";
+import Nav from "../Nav/Nav";
 
-export default function Home() {
+export default function Header() {
   return (
     <header className="header">
       <div className="logo">

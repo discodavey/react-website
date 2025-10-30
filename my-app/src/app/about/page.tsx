@@ -1,10 +1,12 @@
 import React from 'react';
 import "../page.scss";
-import Header from "../components/Header/Header.jsx";
-import Footer from "../components/Footer/Footer.jsx";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import aboutData from '../../data/about.json';
 import sideData from '../../data/side.json';
 
 const About: React.FC = () => {
+  const {title, summary, content: aboutContent} = aboutData;
   const {content: sideContent} = sideData;
 
   return (
@@ -12,8 +14,11 @@ const About: React.FC = () => {
       <div className="container">
         <Header/>
         <main className="main">
-         <h1>About Us</h1>
-         <p>This is the about page</p>
+         <h1>{title}</h1>
+         <h2>{summary}</h2>
+         {aboutContent.map((item, index) => (
+              <p key={index}>{item}</p>
+          ))}
         </main>
         <aside className="aside">
           {sideContent.map((item, index) => (
