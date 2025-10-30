@@ -6,7 +6,7 @@ import homeData from '../data/home.json';
 import sideData from '../data/side.json';
 
 const Home: React.FC = () => {
-  const {title: homeTitle, description, content: homeContent, burger: burger} = homeData;
+  const {title: homeTitle, description, content: homeContent, bannerImage: bannerImage} = homeData;
   const {content: sideContent} = sideData;
 
   return (
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <Header/>
         <main className="main">
           <h1>{homeTitle}</h1>
-          <img src={burger} alt="" />
+          <img src={bannerImage} alt="" />
           <p>{description}</p>
           {homeContent.map((item, index) => (
             <p key={index}>{item}</p>
