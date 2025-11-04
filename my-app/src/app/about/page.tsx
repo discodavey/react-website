@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import aboutData from '../../data/about.json';
 import sideData from '../../data/side.json';
+import navLinks from '../../data/links.json';
 
 const About: React.FC = () => {
   const {title, summary, content: aboutContent} = aboutData;
@@ -12,7 +13,7 @@ const About: React.FC = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <Header/>
+        <Header navLinks={navLinks.links}/>
         <main className="main">
          <h1>{title}</h1>
          <h2>{summary}</h2>

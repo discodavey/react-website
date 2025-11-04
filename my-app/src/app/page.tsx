@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import homeData from '../data/home.json';
 import sideData from '../data/side.json';
+import navLinks from '../data/links.json';
 
 const Home: React.FC = () => {
   const {title: homeTitle, description, content: homeContent, bannerImage: bannerImage} = homeData;
@@ -12,7 +13,7 @@ const Home: React.FC = () => {
   return (
     <div className="wrapper">
       <div className="container">
-        <Header/>
+        <Header navLinks={navLinks.links} />
         <main className="main">
           <h1>{homeTitle}</h1>
           <img src={bannerImage} alt="" />

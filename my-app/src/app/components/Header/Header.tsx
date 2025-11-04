@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./Header.scss";
 import Nav from "../Nav/Nav";
 
-export default function Header() {
+export default function Header({ navLinks } : { navLinks: { link: string, title: string}[]}) {
   return (
     <header className="header">
       <div className="logo">
@@ -15,12 +15,8 @@ export default function Header() {
         />
       </div>
       <nav className="navigation">
-        <Nav />
+        <Nav links={ navLinks } />
       </nav>
-      <div className="mobile-menu">
-        <a href="">
-          <img src="../../images/hamburger.svg" alt="" />Menu</a>
-        </div>
     </header>
   );
 }

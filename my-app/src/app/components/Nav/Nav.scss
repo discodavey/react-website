@@ -24,7 +24,7 @@
 }
 
 .mobile-menu {
-  @media only screen and (min-width: 730px) {
+  @media only screen and (max-width: 730px) {
     display: none;
   }
 }
